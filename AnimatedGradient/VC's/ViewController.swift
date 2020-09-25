@@ -34,6 +34,25 @@ class ViewController: UIViewController {
         gradientSet.append([color3, color1])
         
         gradient.frame = view.bounds
+        gradient.colors = gradientSet[currentGradient]
+        gradient.startPoint = CGPoint(x:0, y:0)
+        gradient.endPoint = CGPoint(x:1, y:1)
+        gradient.drawsAsynchronously = true
+        self.view.layer.addSublayer(gradient)
+    }
+    
+    func animateGradient() {
+        if currentGradient < gradientSet.count - 1 {
+            currentGradient += 1
+        } else {
+            currentGradient = 0
+        }
+        
+        let gradientChangeAnimation = CABasicAnimation(keyPath: "colors")
+        gradientChangeAnimation.toValue = gradientSet[currentGradient]
+        gradientChangeAnimation.fillMode = CAMediaTimingFillMode.forwards
+        gradientChangeAnimation.isRemovedOnCompletion = false
+        gradient.add(gradientChangeAnimation, forKey: "colorChange")
     }
 
 
