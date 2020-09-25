@@ -15,6 +15,7 @@
 		B772D116251E7206004E377E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B772D114251E7206004E377E /* LaunchScreen.storyboard */; };
 		B772D121251E7206004E377E /* AnimatedGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B772D120251E7206004E377E /* AnimatedGradientTests.swift */; };
 		B772D12C251E7206004E377E /* AnimatedGradientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B772D12B251E7206004E377E /* AnimatedGradientUITests.swift */; };
+		B772D13D251E733A004E377E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B772D13C251E733A004E377E /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B772D127251E7206004E377E /* AnimatedGradientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedGradientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B772D12B251E7206004E377E /* AnimatedGradientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradientUITests.swift; sourceTree = "<group>"; };
 		B772D12D251E7206004E377E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B772D13C251E733A004E377E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		B772D108251E7203004E377E /* AnimatedGradient */ = {
 			isa = PBXGroup;
 			children = (
-				B772D109251E7203004E377E /* AppDelegate.swift */,
-				B772D10B251E7203004E377E /* SceneDelegate.swift */,
-				B772D10D251E7203004E377E /* ViewController.swift */,
-				B772D10F251E7203004E377E /* Main.storyboard */,
-				B772D112251E7206004E377E /* Assets.xcassets */,
-				B772D114251E7206004E377E /* LaunchScreen.storyboard */,
 				B772D117251E7206004E377E /* Info.plist */,
+				B772D141251E7340004E377E /* Views */,
+				B772D148251E7359004E377E /* SupportingFiles */,
+				B772D14C251E736D004E377E /* VC's */,
+				B772D150251E737A004E377E /* Storyboard */,
 			);
 			path = AnimatedGradient;
 			sourceTree = "<group>";
@@ -126,6 +126,41 @@
 				B772D12D251E7206004E377E /* Info.plist */,
 			);
 			path = AnimatedGradientUITests;
+			sourceTree = "<group>";
+		};
+		B772D141251E7340004E377E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B772D13C251E733A004E377E /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B772D148251E7359004E377E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B772D109251E7203004E377E /* AppDelegate.swift */,
+				B772D10B251E7203004E377E /* SceneDelegate.swift */,
+				B772D112251E7206004E377E /* Assets.xcassets */,
+				B772D114251E7206004E377E /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B772D14C251E736D004E377E /* VC's */ = {
+			isa = PBXGroup;
+			children = (
+				B772D10D251E7203004E377E /* ViewController.swift */,
+			);
+			path = "VC's";
+			sourceTree = "<group>";
+		};
+		B772D150251E737A004E377E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B772D10F251E7203004E377E /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +295,7 @@
 			files = (
 				B772D10E251E7203004E377E /* ViewController.swift in Sources */,
 				B772D10A251E7203004E377E /* AppDelegate.swift in Sources */,
+				B772D13D251E733A004E377E /* GradientView.swift in Sources */,
 				B772D10C251E7203004E377E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
